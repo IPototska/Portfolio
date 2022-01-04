@@ -64,3 +64,8 @@ button {
 address {
   font-style: normal;
 }
+
+input,
+textarea {
+  border: none;
+}

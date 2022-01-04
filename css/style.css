@@ -237,18 +237,18 @@ body {
   justify-content: space-between;
 }
 
-.hero__text {
-  display: block;
-  font-weight: 400;
-  font-size: calc(22px + 26 * ((100vw - 320px) / 1600));
-}
-
 .hero__title {
   margin: auto 0;
   position: relative;
   font-size: calc(38px + 52 * ((100vw - 320px) / 1600));
   font-weight: 700;
   max-width: 620px;
+}
+
+.hero__text {
+  display: block;
+  font-weight: 400;
+  font-size: calc(22px + 26 * ((100vw - 320px) / 1600));
 }
 
 .hero__link {
@@ -540,8 +540,6 @@ body {
 
 .results {
   text-align: center;
-  padding: 140px 0;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -566,7 +564,6 @@ body {
   transform: translateX(-50%);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
 }
 
 .results__item--works::before {
@@ -587,6 +584,7 @@ body {
 
 .results__text {
   display: block;
+  margin: 0 auto;
   margin-bottom: 20px;
   font-size: 18px;
 }
@@ -595,6 +593,7 @@ body {
   font-weight: 600;
   font-size: 44px;
   line-height: 1;
+  margin-top: auto;
 }
 
 .contacts {
@@ -685,14 +684,13 @@ body {
 }
 
 .form__descr {
+  display: inline-block;
   margin-bottom: 10px;
   font-weight: 600;
-  display: inline-block;
 }
 
 .form__field {
   background-color: #f6f6f8;
-  border: none;
   padding: 13px 15px;
   transition: box-shadow 0.5s;
   width: 255px;
@@ -1167,10 +1165,6 @@ body {
     top: 25px;
     width: 42px;
     height: 35px;
-  }
-
-  .results__item--reviews .results__text {
-    margin-bottom: 26px;
   }
 
   .results__text {
