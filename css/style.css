@@ -238,7 +238,7 @@ body {
 }
 
 .hero__title {
-  margin: auto 0;
+  margin: auto 0 auto auto;
   position: relative;
   font-size: calc(38px + 52 * ((100vw - 320px) / 1600));
   font-weight: 700;
@@ -318,7 +318,7 @@ body {
 }
 
 .skills__line {
-  max-width: 600px;
+  max-width: 550px;
   width: 100%;
   height: 32px;
   background-color: #dbdbed;
@@ -338,31 +338,7 @@ body {
 .services__item {
   max-width: 330px;
   width: 100%;
-  padding-top: 90px;
   position: relative;
-}
-
-.services__item::before {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.services__item--markup::before {
-  background-image: url(../images/services-icon-1.svg);
-}
-
-.services__item--cms::before {
-  background-image: url(../images/services-icon-2.svg);
-}
-
-.services__item--support::before {
-  background-image: url(../images/services-icon-3.svg);
 }
 
 .services__title {
@@ -472,6 +448,9 @@ body {
 }
 
 .reviews__photo {
+  width: 210px;
+  height: 210px;
+  /* object-fit: contain; */
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
